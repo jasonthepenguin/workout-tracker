@@ -24,7 +24,7 @@ export default function Grid() {
                     }
 
                     return (
-                        <button key={workoutIndex}>
+                        <button className={'card plan-card ' + (isLocked ? ('inactive') : (''))} key={workoutIndex}>
                             <div className='plan-card-header'>
                                 <p>Day {((workoutIndex / 8) <= 1) ? '0' + (workoutIndex + 1)
                                     : workoutIndex +1}</p>
